@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Seter</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        div {
+            width: 20%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color: aqua;
+            color: black;
+            padding: 10px;
+        }
+
+        .currentMood {
+            width: max-content;
+        }
+
+        button {
+            width: 100%;
+            margin: 10px 0px 5px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is my dApp!</h1>
+    <p>Here we can set or get the mood:</p>
+    <div>
+        <label for="mood">Input Mood:</label> <br />
+        <input type="text" id="mood" />
+        <div class="currentMood"></div>
+        <button onclick="getMood()">Get Mood</button>
+        <button onclick="setMood()">Set Mood</button>
+    </div>
+    <script src="./interact.js"></script>
+
+</body>
+</html>
